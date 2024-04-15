@@ -13,7 +13,7 @@
 `DB_PASS` -> password for MySQL user (e.g. `root`)   
 `TASK_DB_NAME` -> database name (Flyway will create database automatically, but you must specify database name anyway, e.g. `planner_tasks_db`)   
 
-`application.yml` file also has `magration.path` value, which is a reference for Flyway migrations.    
+`application.yml` file also has `migration.path` value, which is a reference for Flyway migrations.    
 You can see all initial migrations in resources/db/migration.    
 
 ### front-end:  
