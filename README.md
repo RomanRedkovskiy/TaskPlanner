@@ -2,7 +2,7 @@
 
 ## To run application:
 ### task-service:
-`mvn clean package` for task-service    
+`mvn clean package`   
 `java -jar task-service-0.0.1-SNAPSHOT.jar`  
 
 #### Environment variables:  
