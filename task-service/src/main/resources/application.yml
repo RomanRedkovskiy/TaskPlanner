@@ -1,0 +1,24 @@
+server:
+  port: ${TASK_SERVICE_PORT}
+  error:
+    include-message: always
+    include-stacktrace: never
+
+spring:
+  application:
+    name: task-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST}:${DB_PORT}/${TASK_DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASS}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+database:
+  url: jdbc:mysql://${MYSQL_HOST}:${DB_PORT}
+  name: ${TASK_DB_NAME}
+  migration:
+    path: db/migration
